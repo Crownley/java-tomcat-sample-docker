@@ -22,7 +22,7 @@
                 sh "pwd"
                 // sh "docker --version"
                 // sh "/Applications/Docker.app/Contents/Resources/bin/docker --version"
-                sh "sudo docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
+                sh "docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
             }
         }
 
