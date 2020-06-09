@@ -20,9 +20,9 @@
         stage('Create Tomcat Docker Image'){
             steps {
                 sh "pwd"
-                sh "docker --version"
+                // sh "docker --version"
                 // sh "/Applications/Docker.app/Contents/Resources/bin/docker --version"
-                // sh "sudo docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
+                sh "sudo docker build . -t tomcatsamplewebapp:${env.BUILD_ID}"
             }
         }
 
